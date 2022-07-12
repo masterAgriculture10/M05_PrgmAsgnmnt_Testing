@@ -1,0 +1,34 @@
+https://realpython.com/python-testing/#toc
+
+
+PS F:\SDEV220\M05\PrgmAssnmnt_Testing> pip install nose2
+Collecting nose2
+  Downloading nose2-0.11.0-py2.py3-none-any.whl (144 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.1/144.1 kB 955.9 kB/s eta 0:00:00
+Collecting six>=1.7
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting coverage>=4.4.1
+  Downloading coverage-6.4.1-cp39-cp39-win_amd64.whl (187 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 187.4/187.4 kB 872.6 kB/s eta 0:00:00
+Installing collected packages: six, coverage, nose2
+Successfully installed coverage-6.4.1 nose2-0.11.0 six-1.16.0
+PS F:\SDEV220\M05\PrgmAssnmnt_Testing>
+##################installed nose as backup to unittest
+
+
+
+PS F:\SDEV220\M05\PrgmAssnmnt_Testing> python -m nose2
+..F
+======================================================================
+FAIL: test_sum_tuple (test_sum_unittest.TestSum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\SDEV220\M05\PrgmAssnmnt_Testing\test_sum_unittest.py", line 10, in test_sum_tuple
+    self.assertEqual(sum((1, 2, 2)), 6, "Should be 6")
+AssertionError: 5 != 6 : Should be 6
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+PS F:\SDEV220\M05\PrgmAssnmnt_Testing>  
